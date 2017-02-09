@@ -6,7 +6,6 @@ import processing.core.PApplet;
  * Class Display is responsible for creating the bars according to the 
  * Array
  */
-
 public class Display extends PApplet{
 
 	float height;
@@ -17,7 +16,6 @@ public class Display extends PApplet{
 	parent = p;
 	}
 	/**
-	 * 
 	 * @param arr takes the array sorted and display the bars
 	 */
 	public void show(int [] arr){
