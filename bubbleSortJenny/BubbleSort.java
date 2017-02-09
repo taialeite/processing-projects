@@ -25,7 +25,7 @@ public class BubbleSort extends Thread {
 	 * run() method will start the thread
 	 */
 	public void run() {
-		sleep();
+		//sleep();
 		for (int i = 0; i < arr.length - 1; i++) {
 			for (int j = 1; j < arr.length - i; j++) {
 				if (arr[j - 1] > arr[j]) {
