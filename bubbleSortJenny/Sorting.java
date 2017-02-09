@@ -4,14 +4,15 @@ import processing.core.PApplet;
 public class Sorting extends PApplet {
 	
 	Display display;
-	int [] arr = {2,7,1};
+	int [] arr = {2,7,1,10,3,9};
 	
 	public static void main(String[] args) {
 		PApplet.main("bubbleSortJenny.Sorting");//Initializing PApplet
 	}
 	public Sorting(){
-		BubbleSort bubbleSort = new BubbleSort();
-		bubbleSort.sort(this.arr);
+		BubbleSort bubbleSort = new BubbleSort(arr);
+		bubbleSort.start();
+		
 		
 	}
 	

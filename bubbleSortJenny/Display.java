@@ -8,17 +8,13 @@ import processing.core.PApplet;
  */
 
 public class Display extends PApplet{
-	
-	
+
 	float height;
 	PApplet parent;//This variable gives accesses to PApplet Class
 	
-	public Display(PApplet p){
-		
+	public Display(PApplet p){	
 	height = 55;
 	parent = p;
-		
-		
 	}
 	/**
 	 * 
@@ -29,7 +25,8 @@ public class Display extends PApplet{
 		float y = 90;
 		
 		for (int i = 0; i < arr.length; i++){
-			parent.rect(x, y, arr[i] * 90, height); //move the 550
+			parent.fill(204, 102, 0);
+			parent.rect(x, y, arr[i] * 90, height); 
 			y +=  70;	
 		}
 	
